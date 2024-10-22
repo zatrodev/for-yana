@@ -150,7 +150,7 @@ function initCanvas() {
     switch (++iter) {
       case 1:
         growthLimit = 0.29;
-        showBottomText("tap it again", 4500);
+        showBottomText("tap it again", 6000);
         break;
       case 2:
         bottomText.textContent = "";
@@ -158,7 +158,7 @@ function initCanvas() {
         await showText("and lastly...", 2500);
         container.style.visibility = "hidden";
 
-        showBottomText("hope you say yes", 3500);
+        showBottomText("hope you say yes", 4500);
         size = canvas.height * 0.3;
         spread = deg(45);
         sides = 1;
