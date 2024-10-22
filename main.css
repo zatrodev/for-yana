@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.animated-text {
+  font-size: 10rem;
+  animation: shrinkFont 3s ease-in-out;
+}
+
+#bottom-text {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  color: white;
+  font-size: 2rem;
+  top: 20%;
+  visibility: hidden;
+  z-index: 99;
+}
+
+div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+#container {
+  height: 100vh;
+  width: 100vw;
+  font-size: 10rem;
+
+  background-color: #121212;
+}
+
+.show {
+  animation: opacity 2s ease-in forwards;
+}
+
+canvas {
+  background-color: #121212;
+  visibility: hidden;
+}
+
+@keyframes shrinkFont {
+  0% {
+    font-size: 10rem; /* Starting font size */
+  }
+  50%,
+  100% {
+    font-size: 5rem; /* Target font size */
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
