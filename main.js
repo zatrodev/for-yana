@@ -158,7 +158,7 @@ function initCanvas() {
         await showText("and lastly...", 2500);
         container.style.visibility = "hidden";
 
-        showBottomText("hope you say yes", 2500);
+        showBottomText("hope you say yes", 3500);
         size = canvas.height * 0.3;
         spread = deg(45);
         sides = 1;
